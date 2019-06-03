@@ -1835,6 +1835,8 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     TrustZoneAccessService \
     QFingerprintService \
+    QPerformance \
+    UxPerformance \
     Qmmi \
     TimeService \
     WfdCommon \
