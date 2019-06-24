@@ -109,6 +109,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib/libdrmframework.so:system/lib/libdrmframework.so \
     vendor/asus/X00T/proprietary/lib/libdrmframework_jni.so:system/lib/libdrmframework_jni.so \
     vendor/asus/X00T/proprietary/lib/fm_helium.so:system/lib/fm_helium.so \
+    vendor/asus/X00T/proprietary/lib/libfmq.so:system/lib/libfmq.so \
     vendor/asus/X00T/proprietary/lib/libaacwrapper.so:system/lib/libaacwrapper.so \
     vendor/asus/X00T/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
     vendor/asus/X00T/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
@@ -248,6 +249,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/asus/X00T/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
     vendor/asus/X00T/proprietary/lib64/fm_helium.so:system/lib64/fm_helium.so \
+    vendor/asus/X00T/proprietary/lib64/libfmq.so:system/lib64/libfmq.so \
     vendor/asus/X00T/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/asus/X00T/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/asus/X00T/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
