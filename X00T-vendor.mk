@@ -354,6 +354,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/vendor.qti.ims.rcsconfig@1.0.so:system/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/asus/X00T/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/asus/X00T/proprietary/lib64/vendor.qti.latency@2.0.so:system/lib64/vendor.qti.latency@2.0.so \
+    vendor/asus/X00T/proprietary/lib64/libjni_snapcammosaic.so:system/lib64/libjni_snapcammosaic.so \
+    vendor/asus/X00T/proprietary/lib64/libjni_snapcamtinyplanet.so:system/lib64/libjni_snapcamtinyplanet.so \
     vendor/asus/X00T/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
     vendor/asus/X00T/proprietary/lib64/libOpenCL_system.so:system/lib64/libOpenCL_system.so \
     vendor/asus/X00T/proprietary/lib64/libfilterfw.so:system/lib64/libfilterfw.so \
@@ -2019,6 +2021,7 @@ PRODUCT_PACKAGES += \
     Qmmi \
     TimeService \
     WfdCommon \
+    SnapdragonCamera \
     SSGTelemetryService \
     com.qualcomm.location \
     com.qti.snapdragon.sdk.display \
