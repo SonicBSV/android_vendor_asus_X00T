@@ -69,7 +69,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
     vendor/asus/X00T/proprietary/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
     vendor/asus/X00T/proprietary/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:system/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
-    vendor/asus/X00T/proprietary/framework/com.qualcomm.qti.camera.jar:system/framework/com.qualcomm.qti.camera.jar \
     vendor/asus/X00T/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/asus/X00T/proprietary/framework/com.quicinc.cne.api-V1.1-java.jar:system/framework/com.quicinc.cne.api-V1.1-java.jar \
     vendor/asus/X00T/proprietary/framework/com.quicinc.cne.constants-V1.0-java.jar:system/framework/com.quicinc.cne.constants-V1.0-java.jar \
@@ -98,6 +97,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/framework/vendor.qti.latency-V2.0-java.jar:system/framework/vendor.qti.latency-V2.0-java.jar \
     vendor/asus/X00T/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
     vendor/asus/X00T/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \
+    vendor/asus/X00T/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/asus/X00T/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/X00T/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/asus/X00T/proprietary/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
@@ -106,7 +106,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib/com.quicinc.cne.server@1.0.so:system/lib/com.quicinc.cne.server@1.0.so \
     vendor/asus/X00T/proprietary/lib/android.hardware.biometrics.fingerprint@2.1.so:system/lib/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/asus/X00T/proprietary/lib/libavenhancements.so:system/lib/libavenhancements.so \
-    vendor/asus/X00T/proprietary/lib/libcutils.so:system/lib/libcutils.so \
+    vendor/asus/X00T/proprietary/lib/libgnustl_shared.so:system/lib/libgnustl_shared.so \
+    vendor/asus/X00T/proprietary/lib/libhuaqin_gesture_jni.so:system/lib/libhuaqin_gesture_jni.so \
+    vendor/asus/X00T/proprietary/lib/liboemaids_system.so:system/lib/liboemaids_system.so \
     vendor/asus/X00T/proprietary/lib/libqdMetaData.system.so:system/lib/libqdMetaData.system.so \
     vendor/asus/X00T/proprietary/lib/libdrm.so:system/lib/libdrm.so \
     vendor/asus/X00T/proprietary/lib/libdrmframework.so:system/lib/libdrmframework.so \
@@ -246,9 +248,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/com.quicinc.cne.server@1.0.so:system/lib64/com.quicinc.cne.server@1.0.so \
     vendor/asus/X00T/proprietary/lib64/extractors/libmmparser.so:system/lib64/extractors/libmmparser.so \
     vendor/asus/X00T/proprietary/lib64/drm/libfwdlockengine.so:system/lib64/drm/libfwdlockengine.so \
+    vendor/asus/X00T/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
     vendor/asus/X00T/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:system/lib64/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/asus/X00T/proprietary/lib64/libavenhancements.so:system/lib64/libavenhancements.so \
-    vendor/asus/X00T/proprietary/lib64/libcutils.so:system/lib64/libcutils.so \
+    vendor/asus/X00T/proprietary/lib64/libgnustl_shared.so:system/lib64/libgnustl_shared.so \
+    vendor/asus/X00T/proprietary/lib64/libhuaqin_gesture_jni.so:system/lib64/libhuaqin_gesture_jni.so \
+    vendor/asus/X00T/proprietary/lib64/liboemaids_system.so:system/lib64/liboemaids_system.so \
     vendor/asus/X00T/proprietary/lib64/libqdMetaData.system.so:system/lib64/libqdMetaData.system.so \
     vendor/asus/X00T/proprietary/lib64/libdrm.so:system/lib64/libdrm.so \
     vendor/asus/X00T/proprietary/lib64/libdrmframework.so:system/lib64/libdrmframework.so \
@@ -700,7 +705,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/vendor/lib/hw/vendor.qti.hardware.factory@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.factory@1.0-impl.so \
     vendor/asus/X00T/proprietary/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
     vendor/asus/X00T/proprietary/vendor/lib/hw/vulkan.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.sdm660.so \
-    vendor/asus/X00T/proprietary/vendor/lib/libcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcutils.so \
+    vendor/asus/X00T/proprietary/vendor/lib/libFIDOKeyProvisioning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFIDOKeyProvisioning.so \
+    vendor/asus/X00T/proprietary/vendor/lib/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemaids_vendor.so \
     vendor/asus/X00T/proprietary/vendor/lib/libgpu_tonemapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_tonemapper.so \
     vendor/asus/X00T/proprietary/vendor/lib/libgrallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgrallocutils.so \
     vendor/asus/X00T/proprietary/vendor/lib/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdutils.so \
@@ -1687,7 +1693,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
     vendor/asus/X00T/proprietary/vendor/lib64/hw/vendor.qti.hardware.factory@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.factory@1.0-impl.so \
     vendor/asus/X00T/proprietary/vendor/lib64/hw/vulkan.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.sdm660.so \
-    vendor/asus/X00T/proprietary/vendor/lib64/libcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcutils.so \
+    vendor/asus/X00T/proprietary/vendor/lib64/libFIDOKeyProvisioning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFIDOKeyProvisioning.so \
+    vendor/asus/X00T/proprietary/vendor/lib64/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemaids_vendor.so \
     vendor/asus/X00T/proprietary/vendor/lib64/libgpu_tonemapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpu_tonemapper.so \
     vendor/asus/X00T/proprietary/vendor/lib64/libgrallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgrallocutils.so \
     vendor/asus/X00T/proprietary/vendor/lib64/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdutils.so \
@@ -2078,6 +2085,7 @@ PRODUCT_PACKAGES += \
     SnapdragonCamera \
     SSGTelemetryService \
     com.qualcomm.location \
+    com.qualcomm.qti.camera \
     com.qti.snapdragon.sdk.display \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.hardware.sensorscalibrate-V1.0-java
