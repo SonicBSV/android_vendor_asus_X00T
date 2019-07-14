@@ -129,7 +129,7 @@ LOCAL_SRC_FILES := proprietary/app/CallFeaturesSetting/CallFeaturesSetting.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
+LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -140,7 +140,7 @@ LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
+LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -208,7 +208,7 @@ LOCAL_SRC_FILES := proprietary/priv-app/com.qualcomm.location/com.qualcomm.locat
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
+LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -231,7 +231,7 @@ LOCAL_SRC_FILES := proprietary/app/datastatusnotification/datastatusnotification
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
+LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -253,7 +253,7 @@ LOCAL_SRC_FILES := proprietary/app/uceShimService/uceShimService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
+LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
@@ -288,7 +288,7 @@ LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
+LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -300,7 +300,7 @@ LOCAL_SRC_FILES := proprietary/priv-app/ims/ims.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
+LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
@@ -312,7 +312,7 @@ LOCAL_SRC_FILES := proprietary/app/imssettings/imssettings.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
+LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
