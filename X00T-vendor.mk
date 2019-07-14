@@ -107,7 +107,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib/android.hardware.biometrics.fingerprint@2.1.so:system/lib/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/asus/X00T/proprietary/lib/libavenhancements.so:system/lib/libavenhancements.so \
     vendor/asus/X00T/proprietary/lib/libgnustl_shared.so:system/lib/libgnustl_shared.so \
-    vendor/asus/X00T/proprietary/lib/libhuaqin_gesture_jni.so:system/lib/libhuaqin_gesture_jni.so \
     vendor/asus/X00T/proprietary/lib/liboemaids_system.so:system/lib/liboemaids_system.so \
     vendor/asus/X00T/proprietary/lib/libqdMetaData.system.so:system/lib/libqdMetaData.system.so \
     vendor/asus/X00T/proprietary/lib/libdrm.so:system/lib/libdrm.so \
@@ -252,7 +251,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:system/lib64/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/asus/X00T/proprietary/lib64/libavenhancements.so:system/lib64/libavenhancements.so \
     vendor/asus/X00T/proprietary/lib64/libgnustl_shared.so:system/lib64/libgnustl_shared.so \
-    vendor/asus/X00T/proprietary/lib64/libhuaqin_gesture_jni.so:system/lib64/libhuaqin_gesture_jni.so \
     vendor/asus/X00T/proprietary/lib64/liboemaids_system.so:system/lib64/liboemaids_system.so \
     vendor/asus/X00T/proprietary/lib64/libqdMetaData.system.so:system/lib64/libqdMetaData.system.so \
     vendor/asus/X00T/proprietary/lib64/libdrm.so:system/lib64/libdrm.so \
