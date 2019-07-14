@@ -62,6 +62,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/asus/X00T/proprietary/framework/audiosphere.jar:system/framework/audiosphere.jar \
     vendor/asus/X00T/proprietary/framework/uimlpalibrary.jar:system/framework/uimlpalibrary.jar \
+    vendor/asus/X00T/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
+    vendor/asus/X00T/proprietary/framework/com.qualcomm.qti.camera.jar:system/framework/com.qualcomm.qti.camera.jar \
     vendor/asus/X00T/proprietary/framework/uimremotesimlocklibrary.jar:system/framework/uimremotesimlocklibrary.jar \
     vendor/asus/X00T/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/asus/X00T/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
@@ -2073,7 +2075,6 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     TrustZoneAccessService \
     QFingerprintService \
-    qcrilhook \
     QPerformance \
     UxPerformance \
     Qmmi \
@@ -2083,7 +2084,6 @@ PRODUCT_PACKAGES += \
 #    SnapdragonCamera \
     SSGTelemetryService \
     com.qualcomm.location \
-    com.qualcomm.qti.camera \
     com.qti.snapdragon.sdk.display \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.hardware.sensorscalibrate-V1.0-java
