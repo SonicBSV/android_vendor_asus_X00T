@@ -2080,7 +2080,7 @@ PRODUCT_PACKAGES += \
     TimeService \
     tcmiface \
     WfdCommon \
-    SnapdragonCamera \
+#    SnapdragonCamera \
     SSGTelemetryService \
     com.qualcomm.location \
     com.qualcomm.qti.camera \
