@@ -80,13 +80,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/framework/com.quicinc.cne.server-V2.2-java.jar:system/framework/com.quicinc.cne.server-V2.2-java.jar \
     vendor/asus/X00T/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/asus/X00T/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
-    vendor/asus/X00T/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/asus/X00T/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/asus/X00T/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/asus/X00T/proprietary/framework/vendor.qti.data.factory-V1.0-java.jar:system/framework/vendor.qti.data.factory-V1.0-java.jar \
     vendor/asus/X00T/proprietary/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar:system/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
     vendor/asus/X00T/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
-    vendor/asus/X00T/proprietary/framework/tcmiface.jar:system/framework/tcmiface.jar \
     vendor/asus/X00T/proprietary/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:system/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
     vendor/asus/X00T/proprietary/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:system/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
     vendor/asus/X00T/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
@@ -2075,10 +2073,12 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     TrustZoneAccessService \
     QFingerprintService \
+    qcrilhook \
     QPerformance \
     UxPerformance \
     Qmmi \
     TimeService \
+    tcmiface \
     WfdCommon \
     SnapdragonCamera \
     SSGTelemetryService \
