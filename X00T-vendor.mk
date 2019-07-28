@@ -1969,7 +1969,6 @@ PRODUCT_PACKAGES += \
     TimeService \
     tcmiface \
     WfdCommon \
-#    SnapdragonCamera \
     SSGTelemetryService \
     com.qualcomm.location \
     com.qti.snapdragon.sdk.display \
