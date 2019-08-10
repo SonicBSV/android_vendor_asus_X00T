@@ -187,7 +187,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib/libqcbor_system.so:system/lib/libqcbor_system.so \
     vendor/asus/X00T/proprietary/lib/libqti-iopd-client_system.so:system/lib/libqti-iopd-client_system.so \
     vendor/asus/X00T/proprietary/lib/libsecureui_svcsock_system.so:system/lib/libsecureui_svcsock_system.so \
-    vendor/asus/X00T/proprietary/lib/libtensorflow_inference.so:system/lib/libtensorflow_inference.so \
     vendor/asus/X00T/proprietary/lib/vendor.display.config@1.0.so:system/lib/vendor.display.config@1.0.so \
     vendor/asus/X00T/proprietary/lib/vendor.display.config@1.1.so:system/lib/vendor.display.config@1.1.so \
     vendor/asus/X00T/proprietary/lib/vendor.display.config@1.2.so:system/lib/vendor.display.config@1.2.so \
@@ -269,9 +268,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
     vendor/asus/X00T/proprietary/lib64/libarcsoft_beautyshot.so:system/lib64/libarcsoft_beautyshot.so \
     vendor/asus/X00T/proprietary/lib64/libarcsoft_night_shot.so:system/lib64/libarcsoft_night_shot.so \
-    vendor/asus/X00T/proprietary/lib64/libarcsoft_hdr.so:system/lib64/libarcsoft_hdr.so \
-    vendor/asus/X00T/proprietary/lib64/libarcsoft_panorama_burstcapture.so:system/lib64/libarcsoft_panorama_burstcapture.so \
-    vendor/asus/X00T/proprietary/lib64/libarcsoft_single_chart_calibration.so:system/lib64/libarcsoft_single_chart_calibration.so \
     vendor/asus/X00T/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/asus/X00T/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
     vendor/asus/X00T/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
@@ -283,9 +279,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/libjni_hq_beautyshot.so:system/lib64/libjni_hq_beautyshot.so \
     vendor/asus/X00T/proprietary/lib64/libjni_hq_night_shot.so:system/lib64/libjni_hq_night_shot.so \
     vendor/asus/X00T/proprietary/lib64/libjni_imageutil.so:system/lib64/libjni_imageutil.so \
-    vendor/asus/X00T/proprietary/lib64/libjni_hq_hdr_shot.so:system/lib64/libjni_hq_hdr_shot.so \
-    vendor/asus/X00T/proprietary/lib64/libjni_hq_panorama.so:system/lib64/libjni_hq_panorama.so \
-    vendor/asus/X00T/proprietary/lib64/libjni_hq_dualcam_calibration.so:system/lib64/libjni_hq_dualcam_calibration.so \
     vendor/asus/X00T/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/asus/X00T/proprietary/lib64/liblistenjni.so:system/lib64/liblistenjni.so \
     vendor/asus/X00T/proprietary/lib64/liblistensoundmodel2.so:system/lib64/liblistensoundmodel2.so \
@@ -318,8 +311,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/libqcbor_system.so:system/lib64/libqcbor_system.so \
     vendor/asus/X00T/proprietary/lib64/libqti-iopd-client_system.so:system/lib64/libqti-iopd-client_system.so \
     vendor/asus/X00T/proprietary/lib64/libsecureui_svcsock_system.so:system/lib64/libsecureui_svcsock_system.so \
+<<<<<<< HEAD
     vendor/asus/X00T/proprietary/lib64/libscene-native-lib.so:system/lib64/libscene-native-lib.so \
     vendor/asus/X00T/proprietary/lib64/libtensorflow_inference.so:system/lib64/libtensorflow_inference.so \
+=======
+>>>>>>> parent of 130c8a2... ported SnapdragonCamera blobs from X01BD (M2)
     vendor/asus/X00T/proprietary/lib64/vendor.display.config@1.0.so:system/lib64/vendor.display.config@1.0.so \
     vendor/asus/X00T/proprietary/lib64/vendor.display.config@1.1.so:system/lib64/vendor.display.config@1.1.so \
     vendor/asus/X00T/proprietary/lib64/vendor.display.config@1.2.so:system/lib64/vendor.display.config@1.2.so \
