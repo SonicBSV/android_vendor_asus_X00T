@@ -1949,7 +1949,6 @@ PRODUCT_PACKAGES += \
     QFingerprintService \
     QPerformance \
     UxPerformance \
-    Qmmi \
     TimeService \
     tcmiface \
     WfdCommon \
