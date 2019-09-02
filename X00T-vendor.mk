@@ -4,6 +4,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/bin/nvram_btwifi:system/bin/nvram_btwifi \
     vendor/asus/X00T/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/asus/X00T/proprietary/bin/perfservice:system/bin/perfservice \
+    vendor/asus/X00T/proprietary/bin/audioserver:system/bin/audioserver \
     vendor/asus/X00T/proprietary/bin/seempd:system/bin/seempd \
     vendor/asus/X00T/proprietary/bin/smcinvoked:system/bin/smcinvoked \
     vendor/asus/X00T/proprietary/bin/move_time_data.sh:system/bin/move_time_data.sh \
@@ -13,6 +14,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/etc/init/cameraserver.rc:system/etc/init/cameraserver.rc \
     vendor/asus/X00T/proprietary/etc/init/perfservice.rc:system/etc/init/perfservice.rc \
     vendor/asus/X00T/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
+    vendor/asus/X00T/proprietary/etc/init/audioserver.rc:system/etc/init/audioserver.rc \
     vendor/asus/X00T/proprietary/etc/permissions/RemoteSimlock.xml:system/etc/permissions/RemoteSimlock.xml \
     vendor/asus/X00T/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/asus/X00T/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:system/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
@@ -90,6 +92,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib/com.quicinc.cne.server@1.0.so:system/lib/com.quicinc.cne.server@1.0.so \
     vendor/asus/X00T/proprietary/lib/android.hardware.biometrics.fingerprint@2.1.so:system/lib/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/asus/X00T/proprietary/lib/libavenhancements.so:system/lib/libavenhancements.so \
+    vendor/asus/X00T/proprietary/lib/libaudiopolicyenginedefault.so:system/lib/libaudiopolicyenginedefault.so \
+    vendor/asus/X00T/proprietary/lib/libaudiopolicymanager.so:system/lib/libaudiopolicymanager.so \
+    vendor/asus/X00T/proprietary/lib/libaudiopolicymanagerdefault.so:system/lib/libaudiopolicymanagerdefault.so \
+    vendor/asus/X00T/proprietary/lib/libaudiopolicyservice.so:system/lib/libaudiopolicyservice.so \
+    vendor/asus/X00T/proprietary/lib/libaaudioservice.so:system/lib/libaaudioservice.so \
     vendor/asus/X00T/proprietary/lib/liboemaids_system.so:system/lib/liboemaids_system.so \
     vendor/asus/X00T/proprietary/lib/libdrm.so:system/lib/libdrm.so \
     vendor/asus/X00T/proprietary/lib/libdrmframework.so:system/lib/libdrmframework.so \
@@ -229,6 +236,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/drm/libfwdlockengine.so:system/lib64/drm/libfwdlockengine.so \
     vendor/asus/X00T/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
     vendor/asus/X00T/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:system/lib64/android.hardware.biometrics.fingerprint@2.1.so \
+    vendor/asus/X00T/proprietary/lib64/libaudiopolicyenginedefault.so:system/lib64/libaudiopolicyenginedefault.so \
+    vendor/asus/X00T/proprietary/lib64/libaudiopolicymanager.so:system/lib64/libaudiopolicymanager.so \
+    vendor/asus/X00T/proprietary/lib64/libaudiopolicymanagerdefault.so:system/lib64/libaudiopolicymanagerdefault.so \
+    vendor/asus/X00T/proprietary/lib64/libaudiopolicyservice.so:system/lib64/libaudiopolicyservice.so \
     vendor/asus/X00T/proprietary/lib64/libavenhancements.so:system/lib64/libavenhancements.so \
     vendor/asus/X00T/proprietary/lib64/liboemaids_system.so:system/lib64/liboemaids_system.so \
     vendor/asus/X00T/proprietary/lib64/libdrm.so:system/lib64/libdrm.so \
@@ -554,6 +565,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/asus/X00T/proprietary/vendor/etc/calmodule.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/calmodule.cfg \
     vendor/asus/X00T/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    vendor/asus/X00T/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    vendor/asus/X00T/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    vendor/asus/X00T/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
+    vendor/asus/X00T/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/asus/X00T/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/asus/X00T/proprietary/vendor/firmware/a225_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pfp.fw \
     vendor/asus/X00T/proprietary/vendor/firmware/a225_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pm4.fw \
