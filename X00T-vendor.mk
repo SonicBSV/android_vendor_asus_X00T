@@ -260,8 +260,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/libGPQTEEC_system.so:system/lib64/libGPQTEEC_system.so \
     vendor/asus/X00T/proprietary/lib64/libGPTEE_system.so:system/lib64/libGPTEE_system.so \
     vendor/asus/X00T/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
-    vendor/asus/X00T/proprietary/lib64/libarcsoft_beautyshot.so:system/lib64/libarcsoft_beautyshot.so \
-    vendor/asus/X00T/proprietary/lib64/libarcsoft_night_shot.so:system/lib64/libarcsoft_night_shot.so \
     vendor/asus/X00T/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/asus/X00T/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
     vendor/asus/X00T/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
@@ -270,9 +268,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/libfm-hci.so:system/lib64/libfm-hci.so \
     vendor/asus/X00T/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/asus/X00T/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
-    vendor/asus/X00T/proprietary/lib64/libjni_hq_beautyshot.so:system/lib64/libjni_hq_beautyshot.so \
-    vendor/asus/X00T/proprietary/lib64/libjni_hq_night_shot.so:system/lib64/libjni_hq_night_shot.so \
-    vendor/asus/X00T/proprietary/lib64/libjni_imageutil.so:system/lib64/libjni_imageutil.so \
     vendor/asus/X00T/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/asus/X00T/proprietary/lib64/liblistenjni.so:system/lib64/liblistenjni.so \
     vendor/asus/X00T/proprietary/lib64/liblistensoundmodel2.so:system/lib64/liblistensoundmodel2.so \
@@ -282,7 +277,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/libmmi_jni.so:system/lib64/libmmi_jni.so \
     vendor/asus/X00T/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/asus/X00T/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
-    vendor/asus/X00T/proprietary/lib64/libmpbase.so:system/lib64/libmpbase.so \
     vendor/asus/X00T/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
     vendor/asus/X00T/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
     vendor/asus/X00T/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
@@ -352,8 +346,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/vendor.qti.ims.rcsconfig@1.0.so:system/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/asus/X00T/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/asus/X00T/proprietary/lib64/vendor.qti.latency@2.0.so:system/lib64/vendor.qti.latency@2.0.so \
-    vendor/asus/X00T/proprietary/lib64/libjni_snapcammosaic.so:system/lib64/libjni_snapcammosaic.so \
-    vendor/asus/X00T/proprietary/lib64/libjni_snapcamtinyplanet.so:system/lib64/libjni_snapcamtinyplanet.so \
     vendor/asus/X00T/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
     vendor/asus/X00T/proprietary/lib64/libOpenCL_system.so:system/lib64/libOpenCL_system.so \
     vendor/asus/X00T/proprietary/lib64/libfilterfw.so:system/lib64/libfilterfw.so \
