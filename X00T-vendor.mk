@@ -1940,8 +1940,6 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     TrustZoneAccessService \
     QFingerprintService \
-    QPerformance \
-    UxPerformance \
     TimeService \
     tcmiface \
     WfdCommon \
