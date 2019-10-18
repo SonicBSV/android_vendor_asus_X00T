@@ -3,117 +3,359 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),X00T)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libantradio
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES_64 := proprietary/lib64/libantradio.so
-LOCAL_SRC_FILES_32 := proprietary/lib/libantradio.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE        := libts_detected_face_hal
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libts_detected_face_hal.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.hardware.fm@1.0
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES_64 := proprietary/lib64/vendor.qti.hardware.fm@1.0.so
-LOCAL_SRC_FILES_32 := proprietary/lib/vendor.qti.hardware.fm@1.0.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE        := libts_detected_face_hal
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libts_detected_face_hal.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libts_detected_face_hal
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libts_detected_face_hal.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libts_detected_face_hal.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE        := libts_face_beautify_hal
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-LOCAL_VENDOR_MODULE := true
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libts_face_beautify_hal.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libts_face_beautify_hal
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libts_face_beautify_hal.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libts_face_beautify_hal.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE        := libts_face_beautify_hal
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-LOCAL_VENDOR_MODULE := true
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libts_face_beautify_hal.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libgpustats
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libgpustats.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libgpustats.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE        := libqmi_cci
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-LOCAL_VENDOR_MODULE := true
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libqmi_cci.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libsdm-disp-vndapis
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libsdm-disp-vndapis.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libsdm-disp-vndapis.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE        := libqmi_cci
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-LOCAL_VENDOR_MODULE := true
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libqmi_cci.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libthermalclient
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libthermalclient.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libthermalclient.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE        := libqmiservices
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-LOCAL_VENDOR_MODULE := true
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libqmiservices.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libqct_resampler
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/lib/libqct_resampler.so
-LOCAL_MULTILIB := 32
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE        := libqmiservices
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libqmiservices.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libloc_api_v02
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/vendor/lib64/libloc_api_v02.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE        := libqmi_common_so
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-LOCAL_VENDOR_MODULE := true
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libqmi_common_so.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libtime_genoff
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/vendor/lib64/libtime_genoff.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE        := libqmi_common_so
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-LOCAL_VENDOR_MODULE := true
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libqmi_common_so.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libidl
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libidl.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libidl
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libidl.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libdsi_netctrl
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libdsi_netctrl.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libdsi_netctrl
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libdsi_netctrl.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libQSEEComAPI
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libQSEEComAPI.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libQSEEComAPI
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libQSEEComAPI.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libkeymasterprovision
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libkeymasterprovision.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libkeymasterprovision
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libkeymasterprovision.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libkeymasterutils
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libkeymasterutils.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libkeymasterutils
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libkeymasterutils.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libkeymasterdeviceutils
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libkeymasterdeviceutils.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libkeymasterdeviceutils
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libkeymasterdeviceutils.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libsdsprpc
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libsdsprpc.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libsdsprpc
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libsdsprpc.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libc2dcolorconvert
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 64
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib64/libc2dcolorconvert.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE        := libc2dcolorconvert
+LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_STRIP_MODULE  := false
+LOCAL_MULTILIB      := 32
+LOCAL_MODULE_OWNER  := qcom
+LOCAL_MODULE_TAGS   := optional
+LOCAL_SRC_FILES     := proprietary/vendor/lib/libc2dcolorconvert.so
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := dsi_config.xml
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/vendor/etc/data
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := proprietary/vendor/etc/data/dsi_config.xml
+LOCAL_MODULE_OWNER := qti
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := netmgr_config.xml
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/vendor/etc/data
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := proprietary/vendor/etc/data/netmgr_config.xml
+LOCAL_MODULE_OWNER := qti
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -123,8 +365,8 @@ LOCAL_SRC_FILES := proprietary/app/CallFeaturesSetting/CallFeaturesSetting.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -134,8 +376,8 @@ LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -145,9 +387,8 @@ LOCAL_SRC_FILES := proprietary/priv-app/WfdService/WfdService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/priv-app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -159,6 +400,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -170,6 +412,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -181,6 +424,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -190,9 +434,8 @@ LOCAL_SRC_FILES := proprietary/priv-app/com.qualcomm.location/com.qualcomm.locat
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/priv-app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -204,6 +447,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -213,8 +457,8 @@ LOCAL_SRC_FILES := proprietary/app/datastatusnotification/datastatusnotification
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -226,6 +470,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -235,8 +480,8 @@ LOCAL_SRC_FILES := proprietary/app/uceShimService/uceShimService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -248,7 +493,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/priv-app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -260,7 +505,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/priv-app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -270,9 +515,8 @@ LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/priv-app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -282,9 +526,8 @@ LOCAL_SRC_FILES := proprietary/priv-app/ims/ims.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/priv-app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -294,8 +537,8 @@ LOCAL_SRC_FILES := proprietary/app/imssettings/imssettings.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := true
 LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -307,7 +550,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -319,7 +562,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -331,7 +574,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -343,7 +586,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -355,7 +598,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -367,7 +610,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
