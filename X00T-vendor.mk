@@ -2123,7 +2123,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.services.secureui \
     remoteSimLockAuthentication \
     workloadclassifier \
-    xtra_t_app \
     WfdService \
     aptxui \
     dpmserviceapp \
