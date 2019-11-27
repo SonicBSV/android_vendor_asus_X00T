@@ -2094,7 +2094,6 @@ PRODUCT_PACKAGES += \
     atfwd \
     com.qualcomm.qti.services.secureui \
     remoteSimLockAuthentication \
-    workloadclassifier \
     WfdService \
     aptxui \
     dpmserviceapp \
