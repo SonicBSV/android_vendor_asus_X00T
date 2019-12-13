@@ -359,15 +359,15 @@ LOCAL_MODULE_OWNER := qti
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := CallFeaturesSetting
+LOCAL_MODULE := aptxals
 LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/product/app/CallFeaturesSetting/CallFeaturesSetting.apk
+LOCAL_SRC_FILES := proprietary/app/aptxals/aptxals.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
+LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -419,18 +419,6 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := com.qualcomm.qti.services.secureui
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := remoteSimLockAuthentication
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/product/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk
@@ -438,18 +426,6 @@ LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
-LOCAL_PRODUCT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := imssettings
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/product/app/imssettings/imssettings.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
@@ -464,19 +440,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/priv-app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := aptxui
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/product/app/aptxui/aptxui.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -504,18 +467,6 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/priv-app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := seccamservice
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/product/priv-app/seccamservice/seccamservice.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/priv-app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := ims
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/product/priv-app/ims/ims.apk
@@ -531,30 +482,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := QFingerprintService
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/vendor/app/QFingerprintService/QFingerprintService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QDMA
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/vendor/app/QDMA/QDMA.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QDMA-UI
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/vendor/app/QDMA-UI/QDMA-UI.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -612,18 +539,6 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := ConnectionSecurityService
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := PowerOffAlarm
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk
@@ -648,24 +563,13 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := SSGTelemetryService
+LOCAL_MODULE := vendor.qti.hardware.fingerprint-V1.0-java
 LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/vendor/app/SSGTelemetryService/SSGTelemetryService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.qti.snapdragon.sdk.display
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/framework/com.qti.snapdragon.sdk.display.jar
+LOCAL_SRC_FILES := proprietary/product/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
