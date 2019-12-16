@@ -42,6 +42,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/asus/X00T/proprietary/lib64/libfilterfw.so:system/lib64/libfilterfw.so \
     vendor/asus/X00T/proprietary/lib64/libfilterpack_imageproc.so:system/lib64/libfilterpack_imageproc.so \
+    vendor/asus/X00T/proprietary/lib64/libfm-hci.so:system/lib64/libfm-hci.so \
     vendor/asus/X00T/proprietary/lib64/libfmq.so:system/lib64/libfmq.so \
     vendor/asus/X00T/proprietary/lib64/libldacBT_abr.so:system/lib64/libldacBT_abr.so \
     vendor/asus/X00T/proprietary/lib64/libldacBT_enc.so:system/lib64/libldacBT_enc.so \
@@ -100,6 +101,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/asus/X00T/proprietary/lib/libfilterfw.so:system/lib/libfilterfw.so \
     vendor/asus/X00T/proprietary/lib/libfilterpack_imageproc.so:system/lib/libfilterpack_imageproc.so \
+    vendor/asus/X00T/proprietary/lib/libfm-hci.so:system/lib/libfm-hci.so \
     vendor/asus/X00T/proprietary/lib/libfmq.so:system/lib/libfmq.so \
     vendor/asus/X00T/proprietary/lib/libldacBT_abr.so:system/lib/libldacBT_abr.so \
     vendor/asus/X00T/proprietary/lib/libldacBT_enc.so:system/lib/libldacBT_enc.so \
