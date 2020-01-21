@@ -370,6 +370,72 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := Perfdump
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/app/Perfdump/Perfdump.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := QtiSystemService
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/app/QtiSystemService/QtiSystemService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SeempService
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/app/SeempService/SeempService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := smcinvokepkgmgr
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/app/smcinvokepkgmgr/smcinvokepkgmgr.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SimContacts
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/app/SimContacts/SimContacts.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SimSettings
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/app/SimSettings/SimSettings.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := QtiTelephonyService
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -488,6 +554,18 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/priv-app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := CallEnhancement
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/priv-app/CallEnhancement/CallEnhancement.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS

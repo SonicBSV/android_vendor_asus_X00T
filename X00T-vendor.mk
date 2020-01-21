@@ -2007,6 +2007,13 @@ PRODUCT_PACKAGES += \
     DynamicDDSService \
     QtiTelephonyService \
     remotesimlockservice \
+    Perfdump \
+    QtiSystemService \
+    SeempService \
+    smcinvokepkgmgr \
+    SimContacts \
+    SimSettings \
+    CallEnhancement \
     uimlpaservice \
     WfdService \
     aptxui \
