@@ -114,11 +114,9 @@ enable
 MultiMedia1 Mixer INT3_MI2S_TX:1
 INT3_MI2S_TX Channels:One
 DEC1 MUX:ADC1
-ADC1_INP1 Switch:1
 DEC1 Volume:67
 
 disable
-ADC1_INP1 Switch:0
 DEC1 MUX:ZERO
 MultiMedia1 Mixer INT3_MI2S_TX:0
 
@@ -511,7 +509,6 @@ tc 201
 
 enable
 DEC1 MUX:ADC1
-ADC1_INP1 Switch:1
 DEC1 Volume:67
 IIR1 INP1 MUX:DEC1
 RX1 MIX1 INP1:IIR1
@@ -522,7 +519,6 @@ EAR PA Boost:ENABLE
 Loopback MCLK:ENABLE
 
 disable
-ADC1_INP1 Switch:0
 LOOPBACK Mode:DISABLE
 DEC1 MUX:ZERO
 IIR1 INP1 MUX:ZERO
@@ -633,7 +629,6 @@ Rxdevice:5
 
 enable
 DEC1 MUX:ADC1
-ADC1_INP1 Switch:1
 DEC1 Volume:67
 INT0_MI2S_RX Port Mixer INT3_MI2S_TX:1
 INT0_MI2S_RX_DL_HL Switch:1
@@ -644,7 +639,6 @@ EAR_S:Switch
 EAR PA Boost:ENABLE
 
 disable
-ADC1_INP1 Switch:0
 DEC1 MUX:ZERO
 INT0_MI2S_RX Port Mixer INT3_MI2S_TX:0
 INT0_MI2S_RX_DL_HL Switch:0
