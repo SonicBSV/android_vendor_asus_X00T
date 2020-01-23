@@ -2078,7 +2078,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
-    com.qualcomm.location \
     com.qualcomm.qti.services.secureui \
     QtiSystemService \
     SimSettings \
