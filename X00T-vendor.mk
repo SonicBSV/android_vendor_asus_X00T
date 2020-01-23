@@ -23,8 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
     vendor/asus/X00T/proprietary/framework/ActivityExt.jar:system/framework/ActivityExt.jar \
     vendor/asus/X00T/proprietary/framework/audiosphere.jar:system/framework/audiosphere.jar \
-    vendor/asus/X00T/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
-    vendor/asus/X00T/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/asus/X00T/proprietary/framework/qmapbridge.jar:system/framework/qmapbridge.jar \
     vendor/asus/X00T/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/asus/X00T/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:system/lib64/android.hardware.biometrics.fingerprint@2.1.so \
@@ -174,37 +172,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:system/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
     vendor/asus/X00T/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:system/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
     vendor/asus/X00T/proprietary/product/framework/com.qti.dpmframework.jar:system/product/framework/com.qti.dpmframework.jar \
-    vendor/asus/X00T/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:system/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar:system/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar \
     vendor/asus/X00T/proprietary/product/framework/dpmapi.jar:system/product/framework/dpmapi.jar \
-    vendor/asus/X00T/proprietary/product/framework/qcrilhook.jar:system/product/framework/qcrilhook.jar \
-    vendor/asus/X00T/proprietary/product/framework/qti-telephony-common.jar:system/product/framework/qti-telephony-common.jar \
-    vendor/asus/X00T/proprietary/product/framework/qti-telephony-hidl-wrapper.jar:system/product/framework/qti-telephony-hidl-wrapper.jar \
-    vendor/asus/X00T/proprietary/product/framework/QtiTelephonyServicelibrary.jar:system/product/framework/QtiTelephonyServicelibrary.jar \
-    vendor/asus/X00T/proprietary/product/framework/qti-telephony-utils.jar:system/product/framework/qti-telephony-utils.jar \
-    vendor/asus/X00T/proprietary/product/framework/remotesimlockmanagerlibrary.jar:system/product/framework/remotesimlockmanagerlibrary.jar \
-    vendor/asus/X00T/proprietary/product/framework/uimlpalibrary.jar:system/product/framework/uimlpalibrary.jar \
-    vendor/asus/X00T/proprietary/product/framework/uimremoteclientlibrary.jar:system/product/framework/uimremoteclientlibrary.jar \
-    vendor/asus/X00T/proprietary/product/framework/uimremoteserverlibrary.jar:system/product/framework/uimremoteserverlibrary.jar \
-    vendor/asus/X00T/proprietary/product/framework/uimremotesimlocklibrary.jar:system/product/framework/uimremotesimlocklibrary.jar \
     vendor/asus/X00T/proprietary/product/framework/vendor.qti.data.factory-V1.0-java.jar:system/product/framework/vendor.qti.data.factory-V1.0-java.jar \
     vendor/asus/X00T/proprietary/product/framework/vendor.qti.data.factory-V2.0-java.jar:system/product/framework/vendor.qti.data.factory-V2.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar:system/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar:system/product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar:system/product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar:system/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar:system/product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:system/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.hardware.factory-V1.0-java.jar:system/product/framework/vendor.qti.hardware.factory-V1.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.hardware.factory-V1.1-java.jar:system/product/framework/vendor.qti.hardware.factory-V1.1-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.hardware.soter-V1.0-java.jar:system/product/framework/vendor.qti.hardware.soter-V1.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:system/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.latency-V2.0-java.jar:system/product/framework/vendor.qti.latency-V2.0-java.jar \
-    vendor/asus/X00T/proprietary/product/framework/vendor.qti.voiceprint-V1.0-java.jar:system/product/framework/vendor.qti.voiceprint-V1.0-java.jar \
     vendor/asus/X00T/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:system/product/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/X00T/proprietary/product/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:system/product/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/asus/X00T/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/product/lib64/com.qualcomm.qti.dpm.api@1.0.so \
@@ -711,6 +681,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/vendor/lib64/hw/activity_recognition.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/activity_recognition.sdm660.so \
     vendor/asus/X00T/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/asus/X00T/proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so \
+    vendor/asus/X00T/proprietary/vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.broadcastradio@1.0-impl.so \
     vendor/asus/X00T/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/asus/X00T/proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.0-impl-qti.so \
     vendor/asus/X00T/proprietary/vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.composer@2.1-impl.so \
@@ -1134,6 +1105,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/vendor/lib/hw/activity_recognition.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/activity_recognition.sdm660.so \
     vendor/asus/X00T/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/asus/X00T/proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so \
+    vendor/asus/X00T/proprietary/vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.broadcastradio@1.0-impl.so \
     vendor/asus/X00T/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/asus/X00T/proprietary/vendor/lib/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.0-impl-qti.so \
     vendor/asus/X00T/proprietary/vendor/lib/hw/android.hardware.graphics.composer@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.composer@2.1-impl.so \
@@ -2107,6 +2079,33 @@ PRODUCT_PACKAGES += \
     QFingerprintService \
     TimeService \
     WfdCommon \
+    com.qualcomm.qti.imscmservice-V2.0-java \
+    com.qualcomm.qti.imscmservice-V2.1-java \
+    com.qualcomm.qti.imscmservice-V2.2-java \
+    com.qualcomm.qti.uceservice-V2.0-java \
+    com.qualcomm.qti.uceservice-V2.1-java \
+    qti-telephony-common \
+    QtiTelephonyServicelibrary \
+    remotesimlockmanagerlibrary \
+    uimlpalibrary \
+    uimremoteclientlibrary \
+    uimremoteserverlibrary \
+    uimremotesimlocklibrary \
+    vendor.qti.hardware.data.connection-V1.0-java \
+    vendor.qti.hardware.data.connection-V1.1-java \
+    vendor.qti.hardware.data.dynamicdds-V1.0-java \
+    vendor.qti.hardware.data.iwlan-V1.0-java \
+    vendor.qti.hardware.data.latency-V1.0-java \
+    vendor.qti.hardware.factory-V1.0-java \
+    vendor.qti.hardware.factory-V1.1-java \
+    vendor.qti.hardware.soter-V1.0-java \
+    vendor.qti.ims.callinfo-V1.0-java \
+    vendor.qti.ims.rcsconfig-V1.0-java \
+    vendor.qti.latency-V2.0-java \
+    vendor.qti.voiceprint-V1.0-java \
+    qcrilhook \
     vendor.qti.hardware.fingerprint-V1.0-java \
     vendor.qti.hardware.alarm-V1.0-java \
+    com.qti.location.sdk \
+    com.qti.snapdragon.sdk.display \
     vendor.qti.hardware.sensorscalibrate-V1.0-java
