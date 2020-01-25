@@ -1,79 +1,804 @@
 soong_namespace {
 }
 
+cc_prebuilt_library_shared {
+	name: "libantradio",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libantradio.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/libantradio.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqsap_sdk",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqsap_sdk.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "liblbs_core",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/liblbs_core.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/liblbs_core.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.hardware.fm@1.0",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libts_detected_face_hal",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libts_detected_face_hal.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libts_detected_face_hal.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libts_face_beautify_hal",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libts_face_beautify_hal.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libts_face_beautify_hal.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libgpustats",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libgpustats.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libgpustats.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmi_cci",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqmi_cci.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmiservices",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmiservices.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqmiservices.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmi_common_so",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmi_common_so.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqmi_common_so.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libidl",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libidl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libidl.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libdsi_netctrl",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libdsi_netctrl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libdsi_netctrl.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libQSEEComAPI",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libQSEEComAPI.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libQSEEComAPI.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libkeymasterprovision",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libkeymasterprovision.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libkeymasterprovision.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libkeymasterutils",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libkeymasterutils.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libkeymasterutils.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libkeymasterdeviceutils",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libkeymasterdeviceutils.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libkeymasterdeviceutils.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsdsprpc",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsdsprpc.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsdsprpc.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+android_app_import {
+	name: "QtiTelephonyService",
+	owner: "asus",
+	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "datastatusnotification",
+	owner: "asus",
+	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uceShimService",
+	owner: "asus",
+	apk: "proprietary/product/app/uceShimService/uceShimService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "atfwd",
+	owner: "asus",
+	apk: "proprietary/product/app/atfwd/atfwd.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "CallFeaturesSetting",
+	owner: "asus",
+	apk: "proprietary/product/app/CallFeaturesSetting/CallFeaturesSetting.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "imssettings",
+	owner: "asus",
+	apk: "proprietary/product/app/imssettings/imssettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uimremoteclient",
+	owner: "asus",
+	apk: "proprietary/product/app/uimremoteclient/uimremoteclient.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uimremoteserver",
+	owner: "asus",
+	apk: "proprietary/product/app/uimremoteserver/uimremoteserver.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.qti.services.secureui",
+	owner: "asus",
+	apk: "proprietary/product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "QtiSystemService",
+	owner: "asus",
+	apk: "proprietary/product/app/QtiSystemService/QtiSystemService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SimSettings",
+	owner: "asus",
+	apk: "proprietary/product/app/SimSettings/SimSettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PowerOffAlarm",
+	owner: "asus",
+	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "remoteSimLockAuthentication",
+	owner: "asus",
+	apk: "proprietary/product/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "WfdService",
+	owner: "asus",
+	apk: "proprietary/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "dpmserviceapp",
+	owner: "asus",
+	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "CallEnhancement",
+	owner: "asus",
+	apk: "proprietary/product/priv-app/CallEnhancement/CallEnhancement.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "qcrilmsgtunnel",
+	owner: "asus",
+	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "ims",
+	owner: "asus",
+	apk: "proprietary/product/priv-app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "QFingerprintService",
+	owner: "asus",
+	apk: "proprietary/vendor/app/QFingerprintService/QFingerprintService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "ConnectionSecurityService",
+	owner: "asus",
+	apk: "proprietary/vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "SSGTelemetryService",
+	owner: "asus",
+	apk: "proprietary/vendor/app/SSGTelemetryService/SSGTelemetryService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "QDMA",
+	owner: "asus",
+	apk: "proprietary/vendor/app/QDMA/QDMA.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "QDMA-UI",
+	owner: "asus",
+	apk: "proprietary/vendor/app/QDMA-UI/QDMA-UI.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "CACertService",
+	owner: "asus",
+	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "CneApp",
+	owner: "asus",
+	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "IWlanService",
+	owner: "asus",
+	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "TrustZoneAccessService",
+	owner: "asus",
+	apk: "proprietary/vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "TimeService",
+	owner: "asus",
+	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
 dex_import {
     name: "WfdCommon",
     owner: "asus",
     jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
-cc_prebuilt_library_shared {
- name: "libantradio",
- target: {
-   android_arm: {
-     srcs: [
-       "proprietary/lib/libantradio.so",
-     ],
-   },
-   android_arm64: {
-     srcs: [
-       "proprietary/lib64/libantradio.so",
-     ],
-   },
- },
- strip: {
-   none: true,
- },
+dex_import {
+    name: "com.qti.location.sdk",
+    owner: "asus",
+    jars: ["proprietary/framework/com.qti.location.sdk.jar"],
 }
 
-cc_prebuilt_library_shared {
- name: "libqsap_sdk",
- target: {
-   android_arm64: {
-     srcs: [
-       "proprietary/vendor/lib64/libqsap_sdk.so",
-     ],
-   },
- },
- strip: {
-   none: true,
- },
+dex_import {
+    name: "com.qti.snapdragon.sdk.display",
+    owner: "asus",
+    jars: ["proprietary/framework/com.qti.snapdragon.sdk.display.jar"],
 }
 
-cc_prebuilt_library_shared {
- name: "liblbs_core",
- target: {
-   android_arm: {
-     srcs: [
-       "proprietary/vendor/lib/liblbs_core.so",
-     ],
-   },
-   android_arm64: {
-     srcs: [
-       "proprietary/vendor/lib64/liblbs_core.so",
-     ],
-   },
- },
- strip: {
-   none: true,
- },
+dex_import {
+	name: "vendor.qti.hardware.fingerprint-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar"],
 }
 
-cc_prebuilt_library_shared {
- name: "vendor.qti.hardware.fm@1.0",
- target: {
-   android_arm: {
-     srcs: [
-       "proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so",
-     ],
-   },
-   android_arm64: {
-     srcs: [
-       "proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so",
-     ],
-   },
- },
- strip: {
-   none: true,
- },
+dex_import {
+	name: "vendor.qti.hardware.alarm-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.hardware.sensorscalibrate-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.1-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.2-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.1-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "asus",
+	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
+}
+
+dex_import {
+	name: "QtiTelephonyServicelibrary",
+	owner: "asus",
+	jars: ["proprietary/product/framework/QtiTelephonyServicelibrary.jar"],
+}
+
+dex_import {
+	name: "remotesimlockmanagerlibrary",
+	owner: "asus",
+	jars: ["proprietary/product/framework/remotesimlockmanagerlibrary.jar"],
+}
+
+dex_import {
+	name: "uimlpalibrary",
+	owner: "asus",
+	jars: ["proprietary/product/framework/uimlpalibrary.jar"],
+}
+
+dex_import {
+	name: "uimremoteclientlibrary",
+	owner: "asus",
+	jars: ["proprietary/product/framework/uimremoteclientlibrary.jar"],
+}
+
+dex_import {
+	name: "uimremoteserverlibrary",
+	owner: "asus",
+	jars: ["proprietary/product/framework/uimremoteserverlibrary.jar"],
+}
+
+dex_import {
+	name: "uimremotesimlocklibrary",
+	owner: "asus",
+	jars: ["proprietary/product/framework/uimremotesimlocklibrary.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.dynamicdds-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.iwlan-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.latency-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.hardware.factory-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.factory-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.hardware.factory-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.factory-V1.1-java.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.hardware.soter-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.soter-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.ims.callinfo-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.latency-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.latency-V2.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.qti.voiceprint-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/product/framework/vendor.qti.voiceprint-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "asus",
+	jars: ["proprietary/product/framework/qcrilhook.jar"],
 }
