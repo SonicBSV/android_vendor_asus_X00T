@@ -9,7 +9,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
     vendor/asus/X00T/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
     vendor/asus/X00T/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
-    vendor/asus/X00T/proprietary/etc/init/cameraserver.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/cameraserver.rc \
     vendor/asus/X00T/proprietary/etc/init/perfservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/perfservice.rc \
     vendor/asus/X00T/proprietary/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
     vendor/asus/X00T/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
@@ -32,6 +31,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/asus/X00T/proprietary/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libadsprpc_system.so \
     vendor/asus/X00T/proprietary/lib64/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libantradio.so \
+    vendor/asus/X00T/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
+    vendor/asus/X00T/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
     vendor/asus/X00T/proprietary/lib64/libavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libavenhancements.so \
     vendor/asus/X00T/proprietary/lib64/libbtconfigstore.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbtconfigstore.so \
     vendor/asus/X00T/proprietary/lib64/libbt-logClient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbt-logClient.so \
@@ -186,6 +187,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_SYSTEM)/product/lib64/com.qualcomm.qti.imscmservice@2.2.so \
     vendor/asus/X00T/proprietary/product/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/product/lib64/com.qualcomm.qti.uceservice@2.0.so \
     vendor/asus/X00T/proprietary/product/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/product/lib64/com.qualcomm.qti.uceservice@2.1.so \
+    vendor/asus/X00T/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/product/lib64/libaptX_encoder.so \
+    vendor/asus/X00T/proprietary/product/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/product/lib64/libaptXHD_encoder.so \
     vendor/asus/X00T/proprietary/product/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/product/lib64/libdiag_system.so \
     vendor/asus/X00T/proprietary/product/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM)/product/lib64/libdpmctmgr.so \
     vendor/asus/X00T/proprietary/product/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM)/product/lib64/libdpmfdmgr.so \
