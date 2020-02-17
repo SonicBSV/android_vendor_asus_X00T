@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/asus/X00T/proprietary/lib64/drm/libfwdlockengine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/drm/libfwdlockengine.so \
     vendor/asus/X00T/proprietary/lib64/egl/libGLES_android.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/egl/libGLES_android.so \
+    vendor/asus/X00T/proprietary/lib64/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmmparserextractor.so \
     vendor/asus/X00T/proprietary/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/asus/X00T/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/asus/X00T/proprietary/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libadsprpc_system.so \
@@ -58,6 +59,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/liblistenjni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblistenjni.so \
     vendor/asus/X00T/proprietary/lib64/liblistensoundmodel2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblistensoundmodel2.so \
     vendor/asus/X00T/proprietary/lib64/liblocationservice_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblocationservice_jni.so \
+    vendor/asus/X00T/proprietary/lib64/libmedia.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmedia.so \
+    vendor/asus/X00T/proprietary/lib64/libmediandk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmediandk.so \
     vendor/asus/X00T/proprietary/lib64/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmiracastsystem.so \
     vendor/asus/X00T/proprietary/lib64/libmdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmdsprpc_system.so \
     vendor/asus/X00T/proprietary/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmcamera_faceproc2.so \
@@ -86,6 +89,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsdsprpc_system.so \
     vendor/asus/X00T/proprietary/lib64/libsensor1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsensor1.so \
     vendor/asus/X00T/proprietary/lib64/libsensor_reg_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsensor_reg_system.so \
+    vendor/asus/X00T/proprietary/lib64/libstagefright.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright.so \
     vendor/asus/X00T/proprietary/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdclient.so \
     vendor/asus/X00T/proprietary/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdnative.so \
     vendor/asus/X00T/proprietary/lib64/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxt_native.so \
