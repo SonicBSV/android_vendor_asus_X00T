@@ -3,32 +3,6 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),X00T)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE        := libgpustats
-LOCAL_MODULE_OWNER  := asus
-LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_STRIP_MODULE  := false
-LOCAL_MULTILIB      := 64
-LOCAL_MODULE_TAGS   := optional
-LOCAL_SRC_FILES     := proprietary/vendor/lib64/libgpustats.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE        := libgpustats
-LOCAL_MODULE_OWNER  := asus
-LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_STRIP_MODULE  := false
-LOCAL_MULTILIB      := 32
-LOCAL_MODULE_TAGS   := optional
-LOCAL_SRC_FILES     := proprietary/vendor/lib/libgpustats.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE        := libqmi_cci
 LOCAL_MODULE_OWNER  := asus
 LOCAL_MODULE_CLASS  := SHARED_LIBRARIES

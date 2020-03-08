@@ -60,6 +60,25 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+ name: "libgpustats",
+ target: {
+   android_arm: {
+     srcs: [
+       "proprietary/vendor/lib/libgpustats.so",
+     ],
+   },
+   android_arm64: {
+     srcs: [
+       "proprietary/vendor/lib64/libgpustats.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}
+
+cc_prebuilt_library_shared {
  name: "vendor.qti.hardware.fm@1.0",
  target: {
    android_arm: {
