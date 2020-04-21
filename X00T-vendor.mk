@@ -25,9 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/framework/ConnectivityExt.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/ConnectivityExt.jar \
     vendor/asus/X00T/proprietary/framework/qmapbridge.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qmapbridge.jar \
     vendor/asus/X00T/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
-    vendor/asus/X00T/proprietary/framework/vendor.ims.airtrigger-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.ims.airtrigger-V1.0-java.jar \
-    vendor/asus/X00T/proprietary/framework/vendor.ims.airtrigger-V1.1-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.ims.airtrigger-V1.1-java.jar \
-    vendor/asus/X00T/proprietary/framework/vendor.ims.glovemode-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.ims.glovemode-V1.0-java.jar \
     vendor/asus/X00T/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/asus/X00T/proprietary/lib64/drm/libfwdlockengine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/drm/libfwdlockengine.so \
     vendor/asus/X00T/proprietary/lib64/egl/libGLES_android.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/egl/libGLES_android.so \
@@ -418,9 +415,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/asus/X00T/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/asus/X00T/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
-    vendor/asus/X00T/proprietary/vendor/bin/hw/vendor.ims.airtrigger@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.ims.airtrigger@1.0-service \
-    vendor/asus/X00T/proprietary/vendor/bin/hw/vendor.ims.airtrigger@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.ims.airtrigger@1.1-service \
-    vendor/asus/X00T/proprietary/vendor/bin/hw/vendor.ims.glovemode@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.ims.glovemode@1.0-service \
     vendor/asus/X00T/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.0-service \
     vendor/asus/X00T/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/asus/X00T/proprietary/vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti \
@@ -579,9 +573,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/asus/X00T/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/asus/X00T/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
-    vendor/asus/X00T/proprietary/vendor/etc/init/vendor.ims.airtrigger@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.ims.airtrigger@1.0-service.rc \
-    vendor/asus/X00T/proprietary/vendor/etc/init/vendor.ims.airtrigger@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.ims.airtrigger@1.1-service.rc \
-    vendor/asus/X00T/proprietary/vendor/etc/init/vendor.ims.glovemode@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.ims.glovemode@1.0-service.rc \
     vendor/asus/X00T/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
     vendor/asus/X00T/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/asus/X00T/proprietary/vendor/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc \
@@ -990,9 +981,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/vendor/lib64/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.6.so \
     vendor/asus/X00T/proprietary/vendor/lib64/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.7.so \
     vendor/asus/X00T/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
-    vendor/asus/X00T/proprietary/vendor/lib64/vendor.ims.airtrigger@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.ims.airtrigger@1.0.so \
-    vendor/asus/X00T/proprietary/vendor/lib64/vendor.ims.airtrigger@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.ims.airtrigger@1.1.so \
-    vendor/asus/X00T/proprietary/vendor/lib64/vendor.ims.glovemode@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.ims.glovemode@1.0.so \
     vendor/asus/X00T/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/asus/X00T/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/asus/X00T/proprietary/vendor/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.0.so \
