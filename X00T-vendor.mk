@@ -1978,7 +1978,6 @@ PRODUCT_PACKAGES += \
     CallEnhancement \
     CallFeaturesSetting \
     CameraCalibration \
-    aptxui \
     ConnectionSecurityService \
     SSGTelemetryService \
     QDMA \
