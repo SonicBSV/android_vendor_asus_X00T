@@ -7,6 +7,18 @@ dex_import {
     jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
+dex_import {
+    name: "QPerformance",
+    owner: "asus",
+    jars: ["proprietary/framework/QPerformance.jar"],
+}
+
+dex_import {
+    name: "UxPerformance",
+    owner: "asus",
+    jars: ["proprietary/framework/UxPerformance.jar"],
+}
+
 cc_prebuilt_library_shared {
  name: "liblbs_core",
  target: {
