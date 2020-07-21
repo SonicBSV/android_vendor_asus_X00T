@@ -569,30 +569,6 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QDMA
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/vendor/app/QDMA/QDMA.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QDMA-UI
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/vendor/app/QDMA-UI/QDMA-UI.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := CACertService
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/vendor/app/CACertService/CACertService.apk
