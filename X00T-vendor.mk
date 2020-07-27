@@ -164,7 +164,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
     vendor/asus/X00T/proprietary/product/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/dpmapi.xml \
     vendor/asus/X00T/proprietary/product/etc/permissions/lpa.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/lpa.xml \
-    vendor/asus/X00T/proprietary/product/etc/permissions/priv-app-permission-google_auto.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/priv-app-permission-google_auto.xml \
     vendor/asus/X00T/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/qcrilhook.xml \
     vendor/asus/X00T/proprietary/product/etc/permissions/RemoteSimlockManager.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/RemoteSimlockManager.xml \
     vendor/asus/X00T/proprietary/product/etc/permissions/RemoteSimlock.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/RemoteSimlock.xml \
@@ -605,32 +604,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/vendor/firmware/a530v3_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_gpmu.fw2 \
     vendor/asus/X00T/proprietary/vendor/firmware/a530v3_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_seq.fw2 \
     vendor/asus/X00T/proprietary/vendor/firmware/a540_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_gpmu.fw2 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b00 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b01 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b02 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b03 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b04 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b05 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b06 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b07 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b08 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b09 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b10 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b11 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b12 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b13 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b14 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b15 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b16 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b17 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b18 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b19 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b20:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b20 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.b21:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.b21 \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/adsp.mdt \
-    vendor/asus/X00T/proprietary/vendor/firmware/adspr.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware/adspr.jsn \
-    vendor/asus/X00T/proprietary/vendor/firmware/adsps.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware/adsps.jsn \
-    vendor/asus/X00T/proprietary/vendor/firmware/adspua.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware/adspua.jsn \
     vendor/asus/X00T/proprietary/vendor/firmware/cppf.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/cppf.b00 \
     vendor/asus/X00T/proprietary/vendor/firmware/cppf.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/cppf.b01 \
     vendor/asus/X00T/proprietary/vendor/firmware/cppf.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/cppf.b02 \
@@ -1999,14 +1972,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.services.secureui \
     QtiSystemService \
-    AndroidAutoStub \
     CallEnhancement \
     CallFeaturesSetting \
     CameraCalibration \
     ConnectionSecurityService \
     SSGTelemetryService \
-    QDMA \
-    QDMA-UI \
     imssettings \
     uimremoteclient \
     uimremoteserver \
