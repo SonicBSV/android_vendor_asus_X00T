@@ -30,11 +30,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/asus/X00T/proprietary/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/asus/X00T/proprietary/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libadsprpc_system.so \
-    vendor/asus/X00T/proprietary/lib64/libaudiopolicy.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudiopolicy.so \
-    vendor/asus/X00T/proprietary/lib64/libaudiopolicyenginedefault.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudiopolicyenginedefault.so \
-    vendor/asus/X00T/proprietary/lib64/libaudiopolicymanager.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudiopolicymanager.so \
-    vendor/asus/X00T/proprietary/lib64/libaudiopolicymanagerdefault.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudiopolicymanagerdefault.so \
-    vendor/asus/X00T/proprietary/lib64/libaudiopolicyservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudiopolicyservice.so \
     vendor/asus/X00T/proprietary/lib64/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libantradio.so \
     vendor/asus/X00T/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
     vendor/asus/X00T/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
@@ -97,7 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib/libaacwrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaacwrapper.so \
     vendor/asus/X00T/proprietary/lib/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libadsprpc_system.so \
     vendor/asus/X00T/proprietary/lib/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libantradio.so \
-    vendor/asus/X00T/proprietary/lib/libaudiopolicy.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaudiopolicy.so \
     vendor/asus/X00T/proprietary/lib/libbtconfigstore.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libbtconfigstore.so \
     vendor/asus/X00T/proprietary/lib/libbt-logClient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libbt-logClient.so \
     vendor/asus/X00T/proprietary/lib/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcdsprpc_system.so \
