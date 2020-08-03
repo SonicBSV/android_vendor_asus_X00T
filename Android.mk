@@ -355,6 +355,42 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := colorservice
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/product/app/colorservice/colorservice.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := DeviceInfo
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/product/app/DeviceInfo/DeviceInfo.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := xdivert
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/product/app/xdivert/xdivert.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := CallFeaturesSetting
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/product/app/CallFeaturesSetting/CallFeaturesSetting.apk
@@ -473,9 +509,43 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/priv-app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := com.qualcomm.location
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/priv-app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := xtra_t_app
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/priv-app/xtra_t_app/xtra_t_app.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/priv-app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := dpmserviceapp
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/priv-app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := AndroidAutoStub
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/product/priv-app/AndroidAutoStub/AndroidAutoStub.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -512,6 +582,18 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := ims
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/product/priv-app/ims/ims.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/priv-app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := seccamservice
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/product/priv-app/seccamservice/seccamservice.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS

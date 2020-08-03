@@ -23,12 +23,18 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/etc/permissions/com.qualcomm.qti.UxPerformance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.UxPerformance.xml \
     vendor/asus/X00T/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
     vendor/asus/X00T/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
+    vendor/asus/X00T/proprietary/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/izat.xt.srv.xml \
+    vendor/asus/X00T/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
+    vendor/asus/X00T/proprietary/etc/permissions/privapp-permissions-platform2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-platform2.xml \
+    vendor/asus/X00T/proprietary/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.location.xml \
     vendor/asus/X00T/proprietary/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfigsink.xml \
     vendor/asus/X00T/proprietary/etc/wfdconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfig.xml \
     vendor/asus/X00T/proprietary/framework/ActivityExt.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/ActivityExt.jar \
     vendor/asus/X00T/proprietary/framework/audiosphere.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/audiosphere.jar \
     vendor/asus/X00T/proprietary/framework/ConnectivityExt.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/ConnectivityExt.jar \
     vendor/asus/X00T/proprietary/framework/qmapbridge.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qmapbridge.jar \
+    vendor/asus/X00T/proprietary/framework/com.qualcomm.qti.camera.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.qualcomm.qti.camera.jar \
+    vendor/asus/X00T/proprietary/framework/izat.xt.srv.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/izat.xt.srv.jar \
     vendor/asus/X00T/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
     vendor/asus/X00T/proprietary/lib64/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/extractors/libmmparserextractor.so \
     vendor/asus/X00T/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hardware.biometrics.fingerprint@2.1.so \
@@ -192,6 +198,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/product/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/dpmapi.xml \
     vendor/asus/X00T/proprietary/product/etc/permissions/lpa.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/lpa.xml \
     vendor/asus/X00T/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/qcrilhook.xml \
+    vendor/asus/X00T/proprietary/product/etc/permissions/priv-app-permission-google_auto.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/priv-app-permission-google_auto.xml \
     vendor/asus/X00T/proprietary/product/etc/permissions/RemoteSimlockManager.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/RemoteSimlockManager.xml \
     vendor/asus/X00T/proprietary/product/etc/permissions/RemoteSimlock.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/RemoteSimlock.xml \
     vendor/asus/X00T/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/telephony_product_privapp-permissions-qti.xml \
@@ -2075,6 +2082,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.services.secureui \
     QtiSystemService \
+    AndroidAutoStub \
     CallEnhancement \
     CallFeaturesSetting \
     CameraCalibration \
@@ -2083,6 +2091,10 @@ PRODUCT_PACKAGES += \
     imssettings \
     uimremoteclient \
     uimremoteserver \
+    colorservice \
+    DeviceInfo \
+    xdivert \
+    seccamservice \
     QtiTelephonyService \
     CACertService \
     CneApp \
@@ -2092,6 +2104,8 @@ PRODUCT_PACKAGES += \
     atfwd \
     remoteSimLockAuthentication \
     WfdService \
+    com.qualcomm.location \
+    xtra_t_app \
     dpmserviceapp \
     qcrilmsgtunnel \
     ims \
