@@ -140,6 +140,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x8" Node="/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/sample_ms" />
         <Minor OpcodeValue="0x9" Node="/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/idle_mbps" />
         <Minor OpcodeValue="0xA" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq" />
+        <Minor OpcodeValue="0xB" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/up_scale" />
     <!-- cpubw hwmon major end -->
 
     <!-- video major start -->
@@ -198,6 +199,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x2" Node="SPECIAL_NODE - llcbw_hwmon_hyst_opt" />
         <Minor OpcodeValue="0x3" Node="/sys/class/devfreq/soc:qcom,llccbw/bw_hwmon/sample_ms" />
         <Minor OpcodeValue="0x4" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq" />
+        <Minor OpcodeValue="0x5" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/up_scale" />
     <!-- llcbw hwmon major end -->
 
     <!-- memlat major start -->
