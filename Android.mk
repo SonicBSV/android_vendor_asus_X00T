@@ -355,30 +355,6 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := colorservice
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/product/app/colorservice/colorservice.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := DeviceInfo
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/product/app/DeviceInfo/DeviceInfo.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := xdivert
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/product/app/xdivert/xdivert.apk

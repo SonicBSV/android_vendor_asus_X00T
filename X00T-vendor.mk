@@ -2109,8 +2109,6 @@ PRODUCT_PACKAGES += \
     imssettings \
     uimremoteclient \
     uimremoteserver \
-    colorservice \
-    DeviceInfo \
     xdivert \
     seccamservice \
     QtiTelephonyService \
