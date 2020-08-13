@@ -2135,7 +2135,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.services.secureui \
     QtiSystemService \
-    AndroidAutoStub \
     CallEnhancement \
     CallFeaturesSetting \
     CameraCalibration \

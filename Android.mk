@@ -530,17 +530,6 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/priv-app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := AndroidAutoStub
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/product/priv-app/AndroidAutoStub/AndroidAutoStub.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRODUCT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/product/priv-app
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := daxService
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/priv-app/daxService/daxService.apk
