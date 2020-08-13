@@ -1,5 +1,4 @@
 PRODUCT_COPY_FILES += \
-    vendor/asus/X00T/proprietary/xbin/antradio_app:$(TARGET_COPY_OUT_SYSTEM)/xbin/antradio_app \
     vendor/asus/X00T/proprietary/bin/battery-oem-cls.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/battery-oem-cls.sh \
     vendor/asus/X00T/proprietary/bin/dun-server:$(TARGET_COPY_OUT_SYSTEM)/bin/dun-server \
     vendor/asus/X00T/proprietary/bin/move_time_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_time_data.sh \
