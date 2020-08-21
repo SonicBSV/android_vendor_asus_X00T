@@ -72,25 +72,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
- name: "libbtconfigstore",
- target: {
-   android_arm: {
-     srcs: [
-       "proprietary/lib/libbtconfigstore.so",
-     ],
-   },
-   android_arm64: {
-     srcs: [
-       "proprietary/lib64/libbtconfigstore.so",
-     ],
-   },
- },
- strip: {
-   none: true,
- },
-}
-
-cc_prebuilt_library_shared {
  name: "libantradio",
  target: {
    android_arm: {
