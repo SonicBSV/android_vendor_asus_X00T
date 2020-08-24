@@ -47,6 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
     vendor/asus/X00T/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
     vendor/asus/X00T/proprietary/lib64/libarcsoft_single_chart_calibration.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_single_chart_calibration.so \
+    vendor/asus/X00T/proprietary/lib64/libavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libavenhancements.so \
     vendor/asus/X00T/proprietary/lib64/libbluetooth_qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbluetooth_qti.so \
     vendor/asus/X00T/proprietary/lib64/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcdsprpc_system.so \
     vendor/asus/X00T/proprietary/lib64/libdolphin.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdolphin.so \
@@ -113,6 +114,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib/libaacwrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaacwrapper.so \
     vendor/asus/X00T/proprietary/lib/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libadsprpc_system.so \
     vendor/asus/X00T/proprietary/lib/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libantradio.so \
+    vendor/asus/X00T/proprietary/lib/libavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libavenhancements.so \
     vendor/asus/X00T/proprietary/lib/libbluetooth_qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libbluetooth_qti.so \
     vendor/asus/X00T/proprietary/lib/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcdsprpc_system.so \
     vendor/asus/X00T/proprietary/lib/libdolphin.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdolphin.so \
