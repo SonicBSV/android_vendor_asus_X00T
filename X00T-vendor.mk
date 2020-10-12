@@ -42,7 +42,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/asus/X00T/proprietary/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/asus/X00T/proprietary/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libadsprpc_system.so \
-    vendor/asus/X00T/proprietary/lib64/libaudiopolicymanager.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudiopolicymanager.so \
     vendor/asus/X00T/proprietary/lib64/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libantradio.so \
     vendor/asus/X00T/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
     vendor/asus/X00T/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
@@ -2057,24 +2056,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so \
     vendor/asus/X00T/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
-# MotoDolby
+# Dirac Enhancer
 PRODUCT_COPY_FILES += \
-    vendor/asus/X00T/proprietary/etc/permissions/com.motorola.dolby.dolbyui.features.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.dolby.dolbyui.features.xml \
-    vendor/asus/X00T/proprietary/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml \
-    vendor/asus/X00T/proprietary/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.dolby.daxservice.xml \
-    vendor/asus/X00T/proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@1.0-service \
-    vendor/asus/X00T/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@1.0-service.rc \
-    vendor/asus/X00T/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
-    vendor/asus/X00T/proprietary/vendor/lib/libdapparamstorage_ds1se.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdapparamstorage_ds1se.so \
-    vendor/asus/X00T/proprietary/vendor/lib/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrightdolby.so \
-    vendor/asus/X00T/proprietary/vendor/lib/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.dolby.hardware.dms@1.0.so \
-    vendor/asus/X00T/proprietary/vendor/lib/soundfx/libswdap_ds1se.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswdap_ds1se.so \
-    vendor/asus/X00T/proprietary/vendor/lib64/libdapparamstorage_ds1se.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdapparamstorage_ds1se.so \
-    vendor/asus/X00T/proprietary/vendor/lib64/libdlbdsservice_ds1se.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbdsservice_ds1se.so \
-    vendor/asus/X00T/proprietary/vendor/lib64/soundfx/libswdap_ds1se.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswdap_ds1se.so \
-    vendor/asus/X00T/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0-impl.so \
-    vendor/asus/X00T/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0.so
-
+    vendor/asus/X00T/proprietary/vendor/etc/diracmobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/diracmobile.config \
+    vendor/asus/X00T/proprietary/vendor/lib/soundfx/libdirac.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdirac.so \
+    vendor/asus/X00T/proprietary/vendor/lib/libDiracAPI_SHARED.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDiracAPI_SHARED.so
+    
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.services.secureui \
     QtiSystemService \
@@ -2099,8 +2086,6 @@ PRODUCT_PACKAGES += \
     WfdService \
     com.qualcomm.location \
     xtra_t_app \
-    daxService \
-    MotoDolbyV3 \
     dpmserviceapp \
     qcrilmsgtunnel \
     ims \
