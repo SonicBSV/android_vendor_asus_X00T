@@ -14,6 +14,12 @@ dex_import {
 }
 
 dex_import {
+    name: "QXPerformance",
+    owner: "asus",
+    jars: ["proprietary/framework/QXPerformance.jar"],
+}
+
+dex_import {
     name: "UxPerformance",
     owner: "asus",
     jars: ["proprietary/framework/UxPerformance.jar"],
@@ -58,25 +64,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
- name: "libantradio",
- target: {
-   android_arm: {
-     srcs: [
-       "proprietary/lib/libantradio.so",
-     ],
-   },
-   android_arm64: {
-     srcs: [
-       "proprietary/lib64/libantradio.so",
-     ],
-   },
- },
- strip: {
-   none: true,
- },
-}
-
-cc_prebuilt_library_shared {
  name: "vendor.qti.hardware.capabilityconfigstore@1.0",
  target: {
    android_arm64: {
@@ -101,6 +88,44 @@ cc_prebuilt_library_shared {
    android_arm64: {
      srcs: [
        "proprietary/vendor/lib64/libdiag.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}
+
+cc_prebuilt_library_shared {
+ name: "libaudioparsers",
+ target: {
+   android_arm: {
+     srcs: [
+       "proprietary/vendor/lib/libaudioparsers.so",
+     ],
+   },
+   android_arm64: {
+     srcs: [
+       "proprietary/vendor/lib64/libaudioparsers.so",
+     ],
+   },
+ },
+ strip: {
+   none: true,
+ },
+}
+
+cc_prebuilt_library_shared {
+ name: "libloc_core",
+ target: {
+   android_arm: {
+     srcs: [
+       "proprietary/vendor/lib/libloc_core.so",
+     ],
+   },
+   android_arm64: {
+     srcs: [
+       "proprietary/vendor/lib64/libloc_core.so",
      ],
    },
  },
@@ -148,16 +173,16 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
- name: "com.qualcomm.qti.ant@1.0",
+ name: "com.dsi.ant@1.0",
  target: {
    android_arm: {
      srcs: [
-       "proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so",
+       "proprietary/vendor/lib/com.dsi.ant@1.0.so",
      ],
    },
    android_arm64: {
      srcs: [
-       "proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so",
+       "proprietary/vendor/lib64/com.dsi.ant@1.0.so",
      ],
    },
  },
