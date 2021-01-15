@@ -343,57 +343,9 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := DeviceStatisticsService
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/app/DeviceStatisticsService/DeviceStatisticsService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := DynamicDDSService
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/app/DynamicDDSService/DynamicDDSService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := embms
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/app/embms/embms.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := uceShimService
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/system_ext/app/uceShimService/uceShimService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := uimlpaservice
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/app/uimlpaservice/uimlpaservice.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -464,42 +416,6 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QCC
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/app/QCC/QCC.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QCC-AUTHMGR
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/app/QCC-AUTHMGR/QCC-AUTHMGR.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QTIDiagServices
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/app/QTIDiagServices/QTIDiagServices.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := uimremoteclient
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/system_ext/app/uimremoteclient/uimremoteclient.apk
@@ -537,19 +453,6 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := remotesimlockservice
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/app/remotesimlockservice/remotesimlockservice.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := workloadclassifier
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/system_ext/app/workloadclassifier/workloadclassifier.apk
@@ -562,15 +465,27 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := CameraCalibration
+LOCAL_MODULE := CallEnhancement
 LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/app/CameraCalibration/CameraCalibration.apk
+LOCAL_SRC_FILES := proprietary/system_ext/priv-app/CallEnhancement/CallEnhancement.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
 LOCAL_SYSTEM_EXT_MODULE := true
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/priv-app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := CameraCalibration
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/app/CameraCalibration/CameraCalibration.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -724,33 +639,9 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := com.qualcomm.qti.improvetouch.service
+LOCAL_MODULE := TrustZoneAccessService
 LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/vendor/app/com.qualcomm.qti.improvetouch.service/com.qualcomm.qti.improvetouch.service.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QCC-TR-UI
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/vendor/app/QCC-TR-UI/QCC-TR-UI.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := pasrservice
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/vendor/app/pasrservice/pasrservice.apk
+LOCAL_SRC_FILES := proprietary/vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -806,17 +697,6 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.hardware.sensorscalibrate-V1.0-java
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := com.qualcomm.qti.imscmservice-V2.0-java
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
@@ -864,17 +744,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := com.qualcomm.qti.uceservice-V2.1-java
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.qualcomm.qti.uceservice-V2.2-java
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
@@ -1026,39 +895,6 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.ims.rcsconfig-V1.1-java
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.ims.rcsconfig-V2.0-java
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.ims.rcsconfig-V2.1-java
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.qti.latency-V2.0-java
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.latency-V2.0-java.jar
@@ -1103,17 +939,6 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := com.qti.media.secureprocessor
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/com.qti.media.secureprocessor.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := ConnectivityExt
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/system_ext/framework/ConnectivityExt.jar
@@ -1125,9 +950,9 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.data.slm-V1.0-java
+LOCAL_MODULE := vendor.qti.hardware.soter-V1.0-java
 LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.data.slm-V1.0-java.jar
+LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
@@ -1136,9 +961,9 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.hardware.capabilityconfigstore-V1.0-java
+LOCAL_MODULE := QtiTelephonyServicelibrary
 LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar
+LOCAL_SRC_FILES := proprietary/system_ext/framework/QtiTelephonyServicelibrary.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
