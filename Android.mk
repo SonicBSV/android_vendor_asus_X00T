@@ -476,18 +476,6 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := workloadclassifier
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/app/workloadclassifier/workloadclassifier.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := CameraCalibration
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/system_ext/app/CameraCalibration/CameraCalibration.apk
@@ -628,6 +616,18 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := TimeService
 LOCAL_MODULE_OWNER  := asus
 LOCAL_SRC_FILES := proprietary/vendor/app/TimeService/TimeService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := QFingerprintService
+LOCAL_MODULE_OWNER  := asus
+LOCAL_SRC_FILES := proprietary/vendor/app/QFingerprintService/QFingerprintService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
