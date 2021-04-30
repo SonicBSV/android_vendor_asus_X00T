@@ -1078,17 +1078,6 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.hardware.capabilityconfigstore-V1.0-java
-LOCAL_MODULE_OWNER  := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.qti.hardware.data.cne.internal.api-V1.0-java
 LOCAL_MODULE_OWNER  := asus
 LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar
