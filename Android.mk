@@ -565,9 +565,21 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/priv-app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := CACertService
+LOCAL_MODULE := ConnectionSecurityService
 LOCAL_MODULE_OWNER  := asus
-LOCAL_SRC_FILES := proprietary/vendor/app/CACertService/CACertService.apk
+LOCAL_SRC_FILES := proprietary/vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SSGTelemetryService
+LOCAL_MODULE_OWNER  := asus
+LOCAL_SRC_FILES := proprietary/vendor/app/SSGTelemetryService/SSGTelemetryService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -601,6 +613,30 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := TrustZoneAccessService
+LOCAL_MODULE_OWNER  := asus
+LOCAL_SRC_FILES := proprietary/vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := CACertService
+LOCAL_MODULE_OWNER  := asus
+LOCAL_SRC_FILES := proprietary/vendor/app/CACertService/CACertService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := PowerOffAlarm
 LOCAL_MODULE_OWNER  := asus
 LOCAL_SRC_FILES := proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk
@@ -616,18 +652,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := TimeService
 LOCAL_MODULE_OWNER  := asus
 LOCAL_SRC_FILES := proprietary/vendor/app/TimeService/TimeService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QFingerprintService
-LOCAL_MODULE_OWNER  := asus
-LOCAL_SRC_FILES := proprietary/vendor/app/QFingerprintService/QFingerprintService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -736,6 +760,17 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := com.qualcomm.qti.uceservice-V2.3-java
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.3-java.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_SYSTEM_EXT_MODULE := true
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := qti-telephony-common
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/system_ext/framework/qti-telephony-common.jar
@@ -802,9 +837,9 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.hardware.slmadapter-V1.0-java
+LOCAL_MODULE := vendor.qti.hardware.mwqemadapter-V1.0-java
 LOCAL_MODULE_OWNER  := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.hardware.slmadapter-V1.0-java.jar
+LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.hardware.mwqemadapter-V1.0-java.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
@@ -813,9 +848,9 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.data.slm-V1.0-java
+LOCAL_MODULE := vendor.qti.data.mwqem-V1.0-java
 LOCAL_MODULE_OWNER  := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.data.slm-V1.0-java.jar
+LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.data.mwqem-V1.0-java.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
@@ -1058,17 +1093,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := embmslibrary
 LOCAL_MODULE_OWNER  := asus
 LOCAL_SRC_FILES := proprietary/system_ext/framework/embmslibrary.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.hardware.capabilityconfigstore-V1.0-java
-LOCAL_MODULE_OWNER  := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
