@@ -3,32 +3,6 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),X00T)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE        := libgpustats
-LOCAL_MODULE_OWNER  := asus
-LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_STRIP_MODULE  := false
-LOCAL_MULTILIB      := 64
-LOCAL_MODULE_TAGS   := optional
-LOCAL_SRC_FILES     := proprietary/vendor/lib64/libgpustats.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib64
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE        := libgpustats
-LOCAL_MODULE_OWNER  := asus
-LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_STRIP_MODULE  := false
-LOCAL_MULTILIB      := 32
-LOCAL_MODULE_TAGS   := optional
-LOCAL_SRC_FILES     := proprietary/vendor/lib/libgpustats.so
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/lib
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE        := libqmi_cci
 LOCAL_MODULE_OWNER  := asus
 LOCAL_MODULE_CLASS  := SHARED_LIBRARIES
@@ -476,18 +450,6 @@ LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := CameraCalibration
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/app/CameraCalibration/CameraCalibration.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/system/system_ext/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := WfdService
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/priv-app/WfdService/WfdService.apk
@@ -568,18 +530,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := ConnectionSecurityService
 LOCAL_MODULE_OWNER  := asus
 LOCAL_SRC_FILES := proprietary/vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH   := $(PRODUCT_OUT)/vendor/app
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := SSGTelemetryService
-LOCAL_MODULE_OWNER  := asus
-LOCAL_SRC_FILES := proprietary/vendor/app/SSGTelemetryService/SSGTelemetryService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -936,31 +886,9 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.ims.callcapability-V1.0-java
-LOCAL_MODULE_OWNER  := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.qti.ims.factory-V1.0-java
 LOCAL_MODULE_OWNER  := asus
 LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.ims.factory-V1.1-java
-LOCAL_MODULE_OWNER  := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
@@ -1016,6 +944,17 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.qti.latency-V2.0-java
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.latency-V2.0-java.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_SYSTEM_EXT_MODULE := true
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := vendor.qti.latency-V2.1-java
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/system_ext/framework/vendor.qti.latency-V2.1-java.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
@@ -1159,17 +1098,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := com.qti.location.sdk
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/system_ext/framework/com.qti.location.sdk.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.qti.media.secureprocessor
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/system_ext/framework/com.qti.media.secureprocessor.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
